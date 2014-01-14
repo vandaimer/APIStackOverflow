@@ -37,8 +37,18 @@ class APIStakOverflow
 
 	public function imprimir(  )
 	{
+
+		/*
+		 * Decodifica o retorno ( json )
+		 */
+
 		$retorno = json_decode( $this->getInfoAPI( ) );
-		foreach( $retorno->items as $key => $item )
+
+		/*
+		 * Itera sobre o objeto, e imprime cada registro
+		 */
+
+		foreach( $retorno->items as $item )
 		{
 			echo "<a href='{$item->owner->link}' target='_blank'>Link Perfil Usuario</a>";
 			echo '<br/>';
