@@ -16,6 +16,12 @@ class APIStakOverflow
 		$url = "https://api.stackexchange.com/2.1/questions?pagesize=3&fromdate=1387843200&order=desc&min=10&sort=votes&tagged=php&site=stackoverflow&filter=!bc0lRWJOQUR*.H";
 		$curl = curl_init();
 		curl_setopt( $curl, CURLOPT_URL, $url );
+
+		/*
+		 * API limit o usa da mesma, por ip, então foi adiciona a seguinte linha
+		 * Assim, não chegaria ao limit usando meu ip, fazendo os testes
+		 */
+
 		curl_setopt( $curl, CURLOPT_PROXY, '201.59.11.252:3128');
 		curl_setopt( $curl, CURLOPT_ENCODING , '' );
 
