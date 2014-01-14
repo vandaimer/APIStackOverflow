@@ -18,8 +18,8 @@ class APIStakOverflow
 		curl_setopt( $curl, CURLOPT_URL, $url );
 
 		/*
-		 * API limit o usa da mesma, por ip, então foi adiciona a seguinte linha
-		 * Assim, não chegaria ao limit usando meu ip, fazendo os testes
+		 * API limita o uso da mesma, por ip, então foi adicionado a seguinte linha
+		 * Assim, não chegaria ao limite usando meu ip, para fazer os testes
 		 */
 
 		curl_setopt( $curl, CURLOPT_PROXY, '201.59.11.252:3128');
