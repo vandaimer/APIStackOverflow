@@ -3,6 +3,7 @@ class APIStakOverflow
 {
 	public function __construct()
 	{
+		header('Content-Type: text/html; charset=utf-8');
 		$this->imprimir();
 	}
 
