@@ -22,7 +22,7 @@ class APIStakOverflow
 		 * Assim, não chegaria ao limite usando meu ip, para fazer os testes
 		 */
 
-		curl_setopt( $curl, CURLOPT_PROXY, '201.59.11.252:3128');
+		/*curl_setopt( $curl, CURLOPT_PROXY, '201.59.11.252:3128');*/
 		curl_setopt( $curl, CURLOPT_ENCODING , '' );
 
 		/*
