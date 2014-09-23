@@ -1,5 +1,4 @@
 <?php
-dkdosakdsaoksaoksaod tsntando essa merda
 class APIStakOverflow
 {
 	public function __construct()
